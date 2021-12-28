@@ -6,7 +6,7 @@ import Values from "values.js";
 function App() {
 	const [color, setColor] = useState("");
 	const [error, setError] = useState(false);
-	const [list, setList] = useState([]);
+	const [list, setList] = useState(new Values("#f15025").all(10)); // generates tinits / shades by 100 / 10 = 10% (shows ten options)
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
